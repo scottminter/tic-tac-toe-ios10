@@ -127,11 +127,26 @@
                                     <action selector="buttonMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCh-P1-Ogx"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymB-6M-bOE">
+                                <rect key="frame" x="152" y="605" width="71" height="30"/>
+                                <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RMn-ze-TNV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVS-br-U4i">
+                                <rect key="frame" x="166" y="72" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="u0T-hb-xNq" firstAttribute="leading" secondItem="qVB-B8-nqc" secondAttribute="trailing" constant="35" id="2OW-g4-qWI"/>
                             <constraint firstItem="Hgv-n2-Gjw" firstAttribute="top" secondItem="8zp-Ht-l2M" secondAttribute="bottom" constant="31" id="Ano-S8-bWB"/>
+                            <constraint firstItem="LX1-Hs-0bn" firstAttribute="top" secondItem="xVS-br-U4i" secondAttribute="bottom" constant="53" id="Bx9-OZ-oeA"/>
+                            <constraint firstItem="xVS-br-U4i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CxF-lV-w1S"/>
                             <constraint firstItem="zgl-5n-jg4" firstAttribute="leading" secondItem="Hgv-n2-Gjw" secondAttribute="trailing" constant="35" id="FT6-lC-prK"/>
                             <constraint firstItem="Hgv-n2-Gjw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hm6-SK-3DC"/>
                             <constraint firstItem="5r3-dL-r23" firstAttribute="top" secondItem="ZRs-RU-lVd" secondAttribute="bottom" constant="37" id="JLs-7N-AOe"/>
@@ -144,14 +159,29 @@
                             <constraint firstItem="5r3-dL-r23" firstAttribute="leading" secondItem="u0T-hb-xNq" secondAttribute="trailing" constant="35" id="XCh-2I-Psq"/>
                             <constraint firstItem="uMZ-MX-E75" firstAttribute="leading" secondItem="8zp-Ht-l2M" secondAttribute="trailing" constant="35" id="as9-x9-WSI"/>
                             <constraint firstItem="u0T-hb-xNq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9q-zt-6T0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ymB-6M-bOE" secondAttribute="bottom" constant="32" id="bfw-sh-eJG"/>
                             <constraint firstItem="zgl-5n-jg4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e3B-nw-g6g"/>
                             <constraint firstItem="LX1-Hs-0bn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gAs-ON-uvU"/>
                             <constraint firstItem="zgl-5n-jg4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gMq-nZ-6km"/>
+                            <constraint firstItem="ymB-6M-bOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hpW-k9-4hN"/>
                             <constraint firstItem="ZRs-RU-lVd" firstAttribute="leading" secondItem="zgl-5n-jg4" secondAttribute="trailing" constant="35" id="kw9-Zd-Zwy"/>
                             <constraint firstItem="zgl-5n-jg4" firstAttribute="top" secondItem="uMZ-MX-E75" secondAttribute="bottom" constant="31" id="nBl-BP-koK"/>
                             <constraint firstItem="ZRs-RU-lVd" firstAttribute="top" secondItem="IHo-c2-Dze" secondAttribute="bottom" constant="31" id="ozY-Kw-svn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btmLeft" destination="qVB-B8-nqc" id="ACZ-q2-1te"/>
+                        <outlet property="btmMid" destination="u0T-hb-xNq" id="aE6-Ly-7fL"/>
+                        <outlet property="btmRight" destination="5r3-dL-r23" id="HtH-uz-cBu"/>
+                        <outlet property="mdLeft" destination="Hgv-n2-Gjw" id="bYL-MW-sVT"/>
+                        <outlet property="mdMid" destination="zgl-5n-jg4" id="KHh-vC-wAA"/>
+                        <outlet property="mdRight" destination="ZRs-RU-lVd" id="4hJ-FT-7p0"/>
+                        <outlet property="reset" destination="ymB-6M-bOE" id="tiw-ks-M1i"/>
+                        <outlet property="resultsLabel" destination="xVS-br-U4i" id="WbI-cU-3pa"/>
+                        <outlet property="upLeft" destination="8zp-Ht-l2M" id="kjP-Qo-YYF"/>
+                        <outlet property="upMid" destination="uMZ-MX-E75" id="whs-mO-Sab"/>
+                        <outlet property="upRight" destination="IHo-c2-Dze" id="6RG-G3-kIU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

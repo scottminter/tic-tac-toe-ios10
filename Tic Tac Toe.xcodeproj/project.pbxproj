@@ -15,6 +15,8 @@
 		482A1E6E1E2D7F3E00C28850 /* Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482A1E6D1E2D7F3E00C28850 /* Tic_Tac_ToeTests.swift */; };
 		482A1E791E2D7F3E00C28850 /* Tic_Tac_ToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482A1E781E2D7F3E00C28850 /* Tic_Tac_ToeUITests.swift */; };
 		482A1E871E2D80B800C28850 /* Tic-tac-toe.png in Resources */ = {isa = PBXBuildFile; fileRef = 482A1E861E2D80B800C28850 /* Tic-tac-toe.png */; };
+		588F45861E2E640C00B99A71 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 588F45851E2E640C00B99A71 /* x.png */; };
+		588F45881E2E662C00B99A71 /* o.png in Resources */ = {isa = PBXBuildFile; fileRef = 588F45871E2E662C00B99A71 /* o.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		482A1E781E2D7F3E00C28850 /* Tic_Tac_ToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeUITests.swift; sourceTree = "<group>"; };
 		482A1E7A1E2D7F3E00C28850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		482A1E861E2D80B800C28850 /* Tic-tac-toe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tic-tac-toe.png"; sourceTree = "<group>"; };
+		588F45851E2E640C00B99A71 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		588F45871E2E662C00B99A71 /* o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = o.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 		482A1E571E2D7F3E00C28850 /* Tic Tac Toe */ = {
 			isa = PBXGroup;
 			children = (
+				588F45871E2E662C00B99A71 /* o.png */,
 				482A1E861E2D80B800C28850 /* Tic-tac-toe.png */,
+				588F45851E2E640C00B99A71 /* x.png */,
 				482A1E581E2D7F3E00C28850 /* AppDelegate.swift */,
 				482A1E5A1E2D7F3E00C28850 /* ViewController.swift */,
 				482A1E5C1E2D7F3E00C28850 /* Main.storyboard */,
@@ -237,6 +243,8 @@
 			files = (
 				482A1E871E2D80B800C28850 /* Tic-tac-toe.png in Resources */,
 				482A1E631E2D7F3E00C28850 /* LaunchScreen.storyboard in Resources */,
+				588F45861E2E640C00B99A71 /* x.png in Resources */,
+				588F45881E2E662C00B99A71 /* o.png in Resources */,
 				482A1E601E2D7F3E00C28850 /* Assets.xcassets in Resources */,
 				482A1E5E1E2D7F3E00C28850 /* Main.storyboard in Resources */,
 			);
@@ -509,6 +517,7 @@
 				482A1E7F1E2D7F3E00C28850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		482A1E801E2D7F3E00C28850 /* Build configuration list for PBXNativeTarget "Tic Tac ToeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +526,7 @@
 				482A1E821E2D7F3E00C28850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		482A1E831E2D7F3E00C28850 /* Build configuration list for PBXNativeTarget "Tic Tac ToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +535,7 @@
 				482A1E851E2D7F3E00C28850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
