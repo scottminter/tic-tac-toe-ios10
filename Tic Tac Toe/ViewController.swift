@@ -71,7 +71,7 @@ class ViewController: UIViewController {
             moves[imgName]?.append(tempMove)
             checkForWinner()
 
-            switchImage()
+            switchImage(reset: false)
             numOfMoves += 1
         }
         
@@ -166,25 +166,31 @@ class ViewController: UIViewController {
         
         numOfMoves = 0
         reset.isHidden = true
-        switchImage()
+        switchImage(reset: true)
         moves = ["x":[],"o":[]]
         keepPlaying = true
         resultsLabel.text = ""
         buttonsPushed.removeAll()
     }
 
-    func switchImage() {
-        imgArrI += 1
-        if imgArrI >= imgArr.count {
-            imgArrI = 0
-        }
-        
-        imgToUse = imgArr[imgArrI]
-        
-        if imgName == "x" {
-            imgName = "o"
-        } else {
+    func switchImage(reset: Bool) {
+        if reset == true {
+            imgToUse = ximg!
             imgName = "x"
+            imgArrI = 0
+        } else {
+            imgArrI += 1
+            if imgArrI >= imgArr.count {
+                imgArrI = 0
+            }
+            
+            imgToUse = imgArr[imgArrI]
+            
+            if imgName == "x" {
+                imgName = "o"
+            } else {
+                imgName = "x"
+            }
         }
     }
 
